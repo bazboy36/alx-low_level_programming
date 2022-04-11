@@ -1,15 +1,14 @@
 #include <stdio.h>
 /**
+  * main - Entry point
   *
-  *main - Entry point
-  *
-  *Return: 0 for sucess
+  * Return: 0 for sucess
   */
 
 int main(void)
 
 {
-	char alpahbet
+	char alpahbet;
 		for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 			putchar(alphabet);
 	for (alphabet = 'A'; alphabet <= 'Z'; alphabet++)
