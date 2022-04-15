@@ -4,22 +4,43 @@
  * print_triangle - Prints a triangle, using the character #.
  * @size: The size of the triangle.
  */
+
 void print_triangle(int size)
+
 {
-	int hash, index;
 
-	if (size > 0)
-	{
-		for (hash = 1; hash <= size; hash++)
-		{
-			for (index = size - hash; index > 0; index--)
-				_putchar(' ');
 
-			for (index = 0; index < hash; index++)
-				_putchar('#');
+int i;
+int z;
+int d;
+int p;
 
-			if (hash == size)
-				continue;
+if (size > 0)
+{
+d = size - 1;
+for (i = 0; i < size ; i++)
+{
+for (z = d; z > 0 ; z--)
+{
+_putchar (' ');
+}
 
-			_putchar('\n');
+for (p = 0; p <= i; p++)
+{
+_putchar (35);
+}
 
+d--;
+
+_putchar ('\n');
+
+
+}
+
+}
+
+else
+{
+_putchar ('\n');
+}
+}
