@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * _atoi_digit - convert a char to integer.
+  * _atoi_digit - convert a char to integer.
  * @x: character to convert.
  * Return: integer.
  **/
@@ -24,7 +24,6 @@ int _atoi_digit(char x)
 int _isNumber(char *argv)
 {
 	int i;
-
 	for (i = 0; argv[i]; i++)
 		if (argv[i] < 48 || argv[i] > 57)
 			return (1);
@@ -32,7 +31,7 @@ int _isNumber(char *argv)
 }
 
 /**
- *_calloc - allocate array of size * nmemb.
+  *_calloc - allocate array of size * nmemb.
  * @nmemb: number of elements.
  * @size: size of element.
  * Return: pointer to array.
@@ -55,7 +54,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 }
 
 /**
- * mul_array - multiply two arrays.
+  * mul_array - multiply two arrays.
  * @a1: first array.
  * @len1: length of array a1.
  * @a2:  char.
@@ -76,8 +75,7 @@ void *mul_array(char *a1, int len1, char a2, char *a3, int lena)
 		mul /= 10;
 		k--;
 	}
-
-		while (mul != 0)
+	while (mul != 0)
 		{
 			mul += a3[k] - '0';
 			a3[k] = (mul % 10) + '0';
@@ -85,10 +83,10 @@ void *mul_array(char *a1, int len1, char a2, char *a3, int lena)
 			k--;
 		}
 
-	return (a3);
+	return (a3)
 }
 /**
- * print_array - print all digits of array.
+  * print_array - print all digits of array.
  * @nb: number of elements to print.
  * @a: array of elements.
  **/
@@ -108,7 +106,7 @@ void print_array(char *a, int nb)
 }
 
 /**
- *main - print the multiplication of 2 numbers.
+  *main - print the multiplication of 2 numbers.
  *@argc: array length.
  *@argv: array.
  *Return: 0.
@@ -134,14 +132,14 @@ int main(int argc, char *argv[])
 	;
 	lenres = len1 + len2;
 	tabres = _calloc(lenres, sizeof(int));
-	if (tabres == NULL)
+	if (tabre == NULL)
 	{
 		free(tabres);
 		return (0);
 	}
 	for (i = len2 - 1, c = 0; i >= 0; i--)
 	{
-	tabres = mul_array(argv[1], len1, argv[2][i], tabres, (lenres - 1 - c));
+		tabres = mul_array(argv[1], len1, argv[2][i], tabres, (lenres - 1 - c));
 	c++;
 	}
 	print_array(tabres, lenres);
