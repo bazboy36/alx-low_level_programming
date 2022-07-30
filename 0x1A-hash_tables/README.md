@@ -1,4 +1,4 @@
-#0 x19. C - Hash tables
+# 0x19. C - Hash tables
 ## Description
 **This Holberton School project is about hash tables in C. How to create and use one, how to deal with collisions. It also covers what makes a good hash function and what are the most common use for hash tables.
 
